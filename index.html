@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">turulkok</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">Hakkımda</a></li>
+          <li><a href="#experience">Deneyimler</a></li>
+          <li><a href="#projects">Projeler<a></li>
+          <li><a href="#contact">İletişim</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">turulkok</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">Hakkımda</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Deneyimler</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projeler</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">İletişim</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="turulkok profile picture" style="border-radius: 50%; object-fit: cover;" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Merhaba, Ben</p>
+        <h1 class="title">Tuğrul Şahin Kök</h1>
+        <p class="section__text__p2">
+          Fizik Öğrencisi @Ankara University | Python Geliştiricisi | Veri
+          Analizi & Hesaplamalı Fizik
+        </p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdff')"
+          >
+            Cv İndir
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/turulkok', '_blank'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/turulkok', '_blank'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Daha fazla bilgi edinin</p>
+      <h1 class="title">Hakkımda</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic" 
+            style="border-radius: 50%;
+            width: 30vw; 
+            height: 30vw;
+            max-width: 350px; 
+            max-height: 350px;
+            object-fit: cover;
+            transform: scale(1.2);
+            object-position: center;"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Alanlar</h3>
+              <p>Freelance Developer<br />Hesaplamalı Fizik</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Eğitim</h3>
+              <p>Fizik Lisans - Ankara Üniversitesi<br />Bilgisayar Operatörlüğü Önlisans - DPÜ</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Fizik Lisans Öğrencisi ve Python Geliştiricisi olarak, matematiksel modelleri 
+    yazılım çözümleriyle bütünleştirmeye odaklanmaktayım. 
+    Bilgisayarlı Görü (OpenCV), Oyun Geliştirme (Unity) ve Web Teknolojileri 
+    alanlarında uygulamalı projeler geliştirmekteyim. Verimli ve algoritmik 
+    sistemler üzerine yetkinliklerimi geliştirmeye ve bu alanda değer üretmeye istekliyim.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+<section id="experience">
+  <p class="section__text__p1">Disiplinler Arası Yaklaşımım</p>
+  <h1 class="title">Gelişim Alanları</h1>
+  <div class="experience-details-container">
+    <div class="about-containers">
+      
+      <div class="details-container">
+        <h2 class="experience-sub-title">Fizik & Simülasyon</h2>
+        <div class="article-container">
+          <article>
+            <img src="./assets/checkmark.png" alt="icon" class="icon" />
+            <div>
+              <h3>Klasik Mekanik</h3>
+              <p style="font-size: 0.8rem; color: #666;">Hareket Simülasyonları</p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="icon" class="icon" />
+            <div>
+              <h3>Elektromanyetizma</h3>
+              <p style="font-size: 0.8rem; color: #666;">Alan Hesaplamaları</p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="icon" class="icon" />
+            <div>
+              <h3>Kuantum Mekaniği</h3>
+              <p style="font-size: 0.8rem; color: #666;">Olasılık Modelleri</p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="icon" class="icon" />
+            <div>
+              <h3>Termodinamik</h3>
+              <p style="font-size: 0.8rem; color: #666;">Isı & Enerji Sistemleri</p>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="details-container">
+        <h2 class="experience-sub-title">Matematik & Algoritma</h2>
+        <div class="article-container">
+          <article>
+            <img src="./assets/checkmark.png" alt="icon" class="icon" />
+            <div>
+              <h3>Lineer Cebir</h3>
+              <p style="font-size: 0.8rem; color: #666;">Vektörler & Matrisler</p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="icon" class="icon" />
+            <div>
+              <h3>Diferansiyel</h3>
+              <p style="font-size: 0.8rem; color: #666;">Değişim Oranları</p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="icon" class="icon" />
+            <div>
+              <h3>İstatistik</h3>
+              <p style="font-size: 0.8rem; color: #666;">Veri Analizi</p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="icon" class="icon" />
+            <div>
+              <h3>Sayısal Analiz</h3>
+              <p style="font-size: 0.8rem; color: #666;">Nümerik Çözümler</p>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="details-container">
+        <h2 class="experience-sub-title">Yazılım & Teknoloji</h2>
+        <div class="article-container">
+          <article>
+            <img src="./assets/checkmark.png" alt="icon" class="icon" />
+            <div>
+              <h3>Python & Javascript</h3>
+              <p style="font-size: 0.8rem; color: #666;">Ana Diller</p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="icon" class="icon" />
+            <div>
+              <h3>Unity 3D (C#)</h3>
+              <p style="font-size: 0.8rem; color: #666;">Oyun Motoru</p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="icon" class="icon" />
+            <div>
+              <h3>OpenCV</h3>
+              <p style="font-size: 0.8rem; color: #666;">Görüntü İşleme</p>
+            </div>
+          </article>
+          <article>
+            <img src="./assets/checkmark.png" alt="icon" class="icon" />
+            <div>
+              <h3>Web Stack</h3>
+              <p style="font-size: 0.8rem; color: #666;">HTML/CSS/JS</p>
+            </div>
+          </article>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+</section>
+<section id="projects">
+  <p class="section__text__p1">Çalışmalarım</p>
+  <h1 class="title">Projelerim</h1>
+  
+  <div class="projects-grid-container">
+    
+    <div class="project-card">
+      <div class="project-img-container">
+        <img src="./assets/project-1.png" alt="3D Physics Game" class="project-img" />
+      </div>
+      <div class="project-info">
+        <h2 class="project-title">3D Oyun Geliştirme & ZombiXLand</h2>
+        <div class="project-tags">
+          <span>Unity</span>
+          <span>C#</span>
+          <span>Physics Engine</span>
+        </div>
+        <p class="project-desc">
+          Vektör matematiği ve RigidBody fiziği kullanılarak geliştirilmiş, yapay zeka destekli 3D hayatta kalma simülasyonu.
+        </p>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/turulkok'">Github</button>
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.linkedin.com/in/turulkok/details/projects/'">Detaylar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-img-container">
+        <img src="./assets/project-2.png" alt="Tower Defense" class="project-img" />
+      </div>
+      <div class="project-info">
+        <h2 class="project-title">Stratejik Savunma Oyunu & Kule Savunma</h2>
+        <div class="project-tags">
+          <span>Algorithms</span>
+          <span>OOP</span>
+          <span>AI Logic</span>
+        </div>
+        <p class="project-desc">
+          Algoritmik dalga yönetimi ve otonom hedefleme sistemlerine odaklanan ölçeklenebilir savunma simülasyonu.
+        </p>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/turulkok'">Github</button>
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.linkedin.com/in/turulkok/details/projects/'">Detaylar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="project-img-container">
+        <img src="./assets/project-3.png" alt="Computer Vision" class="project-img" />
+      </div>
+      <div class="project-info">
+        <h2 class="project-title">Bilgisayarlı Görü Portföyü OpenCV</h2>
+        <div class="project-tags">
+          <span>Python</span>
+          <span>OpenCV</span>
+          <span>NumPy</span>
+        </div>
+        <p class="project-desc">
+          Yüz tanıma, nesne takibi ve görüntü işleme algoritmalarını içeren kapsamlı bilgisayarlı görü kütüphanesi.
+        </p>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/turulkok/OpenCV'">Github</button>
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.linkedin.com/in/turulkok/details/projects/'">Detaylar</button>
+        </div>
+      </div>
+    </div>
+<!--
+    <div class="hidden-projects" id="more-projects" style="display: none;">
+      
+      <div class="project-card">
+        <div class="project-img-container">
+          <img src="./assets/project-1.png" alt="Web Portfolio" class="project-img" />
+        </div>
+        <div class="project-info">
+          <h2 class="project-title">Kişisel Web Portföyü</h2>
+          <div class="project-tags">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+          </div>
+          <p class="project-desc">
+            Modern, duyarlı (responsive) tasarım prensipleriyle geliştirilmiş kişisel tanıtım ve proje sergileme platformu.
+          </p>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='#'">Github</button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='#'">Canlı</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+-->
+
+
+  </div>
+
+  <div style="text-align: center; margin-top: 2rem;">
+    <button id="toggle-btn" class="btn btn-color-1" onclick="toggleProjects()">Daha Fazla Göster</button>
+  </div>
+
+  <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+</section>
+<section id="contact">
+  <p class="section__text__p1">İletişime Geçin</p>
+  <h1 class="title">Bana Ulaşın</h1>
+  <div class="contact-info-upper-container">
+    <div class="contact-info-container">
+      <img
+        src="./assets/email.png"
+        alt="Email icon"
+        class="icon contact-icon email-icon"
+      />
+      <p><a href="mailto:tugkok@gmail.com">tugkok@gmail.com</a></p>
+    </div>
+    <div class="contact-info-container">
+      <img
+        src="./assets/linkedin.png"
+        alt="LinkedIn icon"
+        class="icon contact-icon"
+      />
+      <p><a href="https://www.linkedin.com/in/turulkok/">LinkedIn</a></p>
+    </div>
+  </div>
+</section>
+
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">Hakkımda</a></li>
+            <li><a href="#experience">Deneyimler</a></li>
+            <li><a href="#projects">Projeler</a></li>
+            <li><a href="#contact">İletişim</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2025 Tuğrul Şahin Kök. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
