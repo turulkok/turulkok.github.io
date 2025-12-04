@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tuğrul Şahin Kök | Fizik & Yazılım ⚛️</title>
+  
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🪐</text></svg>">
+  
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
   <body>
     <nav id="desktop-nav">
       <div class="logo">turulkok</div>
@@ -251,6 +254,48 @@
   
   <div class="projects-grid-container">
     
+    
+    <div class="project-card">
+      <div class="project-img-container">
+        <img src="./assets/double_pendulum.png" alt="Double Pendulum Chaos Simulation" class="project-img" />
+      </div>
+      <div class="project-info">
+        <h2 class="project-title">Kaos Teorisi & Simülasyon</h2>
+        <div class="project-tags">
+          <span>Python</span>
+          <span>SciPy & SymPy</span>
+          <span>Lagrangian</span>
+        </div>
+        <p class="project-desc">
+          Lagrangian mekaniği kullanılarak çift sarkaç hareketinin modellendiği, kaos teorisinin (kelebek etkisi) ve başlangıç koşullarına hassasiyetin sayısal analiz ile simüle edildiği hesaplamalı fizik projesi.
+        </p>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/turulkok'">Github</button>
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.linkedin.com/in/turulkok/details/projects/'">Detaylar</button>
+        </div>
+      </div>
+    </div>
+    <div class="project-card">
+      <div class="project-img-container">
+        <img src="./assets/nbody.png" alt="N-Body Gravity Simulation" class="project-img" />
+      </div>
+      <div class="project-info">
+        <h2 class="project-title">N-Body Yerçekimi Simülasyonu</h2>
+        <div class="project-tags">
+          <span>Python (VPython)</span>
+          <span>Newtonian Mechanics</span>
+          <span>Numerical Integration</span>
+        </div>
+        <p class="project-desc">
+          Web VPython ile geliştirilen, Newton'un Evrensel Kütle Çekim yasası ve Euler integrasyon metodu kullanılarak kaotik yıldız sistemlerinin modellendiği; Plummer Softening çekirdeği ile tekilliklerin önlendiği gerçek zamanlı N-Cisim simülasyonu. 
+           <a href="https://trinket.io/library/trinkets/681c9f0179c2">Uygulama linki</a>
+        </p>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/turulkok'">Github</button>
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.linkedin.com/in/turulkok'">Detaylar</button>
+        </div>
+      </div>
+    </div>
     <div class="project-card">
       <div class="project-img-container">
         <img src="./assets/project-1.png" alt="3D Physics Game" class="project-img" />
@@ -272,26 +317,6 @@
       </div>
     </div>
 
-    <div class="project-card">
-      <div class="project-img-container">
-        <img src="./assets/project-2.png" alt="Tower Defense" class="project-img" />
-      </div>
-      <div class="project-info">
-        <h2 class="project-title">Stratejik Savunma Oyunu & Kule Savunma</h2>
-        <div class="project-tags">
-          <span>Algorithms</span>
-          <span>OOP</span>
-          <span>AI Logic</span>
-        </div>
-        <p class="project-desc">
-          Algoritmik dalga yönetimi ve otonom hedefleme sistemlerine odaklanan ölçeklenebilir savunma simülasyonu.
-        </p>
-        <div class="btn-container">
-          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/turulkok'">Github</button>
-          <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.linkedin.com/in/turulkok/details/projects/'">Detaylar</button>
-        </div>
-      </div>
-    </div>
 
     <div class="project-card">
       <div class="project-img-container">
@@ -313,12 +338,32 @@
         </div>
       </div>
     </div>
-<!--
+
     <div class="hidden-projects" id="more-projects" style="display: none;">
-      
+          <div class="project-card">
+      <div class="project-img-container">
+        <img src="./assets/project-2.png" alt="Tower Defense" class="project-img" />
+      </div>
+      <div class="project-info">
+        <h2 class="project-title">Stratejik Savunma Oyunu & Kule Savunma</h2>
+        <div class="project-tags">
+          <span>Algorithms</span>
+          <span>OOP</span>
+          <span>AI Logic</span>
+        </div>
+        <p class="project-desc">
+          Algoritmik dalga yönetimi ve otonom hedefleme sistemlerine odaklanan ölçeklenebilir savunma simülasyonu.
+        </p>
+        <div class="btn-container">
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/turulkok'">Github</button>
+          <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.linkedin.com/in/turulkok/details/projects/'">Detaylar</button>
+        </div>
+      </div>
+    </div>
+
       <div class="project-card">
         <div class="project-img-container">
-          <img src="./assets/project-1.png" alt="Web Portfolio" class="project-img" />
+          <img src="./assets/website.PNG" alt="Web Portfolio" class="project-img" />
         </div>
         <div class="project-info">
           <h2 class="project-title">Kişisel Web Portföyü</h2>
@@ -338,7 +383,6 @@
       </div>
 
     </div>
--->
 
 
   </div>
